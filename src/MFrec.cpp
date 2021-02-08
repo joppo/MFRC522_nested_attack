@@ -90,7 +90,12 @@ bool MFrec::crackKey( byte command, byte blockAddr_e, byte blockAddr_a, byte *ke
     const int delayTime = 10;
 
     resetPICC( delayTime );
+	std::cout << "check\n";
     initCom();
+	std::cout << "after initCom\n";
+
+	int test1;
+	std::cin >> test1;
 
     
     /*-------------------------------------- RECOVERY LOOP  ---------------------------------------*/

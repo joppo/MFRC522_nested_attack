@@ -263,7 +263,7 @@ void RC522::initCom()
     while( 1 )
     {
 	#if RC522_WIRE
-	delay(10);
+	delay(100);
 	#endif
 	
 	if( !sendReqA() ) continue;

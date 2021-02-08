@@ -12,7 +12,7 @@
  * DBG: set to get debug info in stdout
  * WIRE: reset to compile outside of raspberry, for ease of working only
  */
-#define RC522_DBG	0
+#define RC522_DBG	1
 #define RC522_WIRE	0
 
 #ifndef _RC522_H_
@@ -59,6 +59,7 @@ Section:                                          ~literals and defines
 #define RST	5
 #define CHANNEL 0// CE0
 #define SPI_SPEED 4000000// Hz (500k-32m)
+//#define SPI_SPEED 50000// Hz (500k-32m)
 
 
 typedef uint8_t byte;
